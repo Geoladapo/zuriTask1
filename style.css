@@ -1,0 +1,74 @@
+/* Styling the header element */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f3f5;
+  color: #495057;
+  width: 100%;
+}
+
+/* -----Primary styling-------- */
+div[data-testid='container'] {
+  margin: 50px auto;
+  max-width: 750px;
+  padding: 20px;
+  text-align: center;
+}
+
+img[data-testid='slackDisplayImage'] {
+  width: 200px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+h1[data-testid='page-title'] {
+  font-size: 16px;
+}
+
+a[data-testid='githubURL'] {
+  color: #000;
+  font-size: 16px;
+  transition: all 1s;
+}
+
+div[data-testid='currentUTCTime'] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+p[data-testid='myTrack'] {
+  font-size: 16px;
+  color: rgb(132, 132, 218);
+}
+
+/* -----Secondary styling---- */
+main {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 80px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#github {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.github,
+.time {
+  width: 15px;
+  height: 15px;
+}

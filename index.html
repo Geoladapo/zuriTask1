@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div data-testid="container">
+      <img
+        data-testid="slackDisplayImage"
+        src="./Elijah.jpeg"
+        alt="Elijah Oladapo"
+      />
+      <main>
+        <div class="details">
+          <h1 data-testid="slackUserName">Elijah Oladapo</h1>
+          <p data-testid="myTrack">Frontend Track</p>
+          <div id="github">
+            <img src="./github.svg" alt="github icon" class="github" />
+            <a href="https://github.com/Geoladapo" data-testid="githubURL">
+              Github
+            </a>
+          </div>
+        </div>
+        <div class="d_info">
+          <div data-testid="currentUTCTime">
+            <img src="./clock-regular.svg" alt="time" class="time" />
+            <span id="utcTime"></span>AM
+          </div>
+          <p data-testid="currentDayOfTheWeek">
+            Today is <span id="dayOfWeek"></span>.
+          </p>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
