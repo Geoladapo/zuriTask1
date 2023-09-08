@@ -43,7 +43,6 @@ div[data-testid='currentUTCTime'] {
 
 p[data-testid='myTrack'] {
   font-size: 16px;
-  color: rgb(132, 132, 218);
 }
 
 /* -----Secondary styling---- */

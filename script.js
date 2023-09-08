@@ -11,14 +11,13 @@ const today = new Date();
 const currentDay = daysOfWeek[today.getDay()];
 document.getElementById('dayOfWeek').textContent = currentDay;
 
-function updateTime() {
-  const utcTimeElement = document.getElementById('utcTime');
-  const now = new Date();
-  now.setHours(now.getHours() + 1);
-  const options = { timeZone: 'UTC', timeStyle: 'medium', hour12: false };
-  const utcTimeString = now.toLocaleTimeString('en-US', options);
+function updateElapsedTime() {
+  const elapsedTimeElement = document.getElementById('utcTime');
 
-  utcTimeElement.textContent = utcTimeString;
+  const currentTime = new Date();
+
+  elapsedTimeElement.textContent = currentTime.toLocaleString();
 }
-updateTime();
-setInterval(updateTime, 1000);
+
+updateElapsedTime();
+setInterval(updateElapsedTime, 1000);
