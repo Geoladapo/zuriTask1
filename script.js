@@ -9,7 +9,6 @@ const daysOfWeek = [
 ];
 const today = new Date();
 const currentDay = daysOfWeek[today.getDay()];
-
 document.getElementById('dayOfWeek').textContent = currentDay;
 
 function updateTime() {
