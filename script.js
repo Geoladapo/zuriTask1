@@ -10,10 +10,13 @@ const daysOfWeek = [
 const today = new Date();
 const currentDay = daysOfWeek[today.getDay()];
 
-document.getElementById('dayOfWeek').textContent = currentDay;
+document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent =
+  currentDay;
 
 function updateElapsedTime() {
-  const elapsedTimeElement = document.getElementById('utcTime');
+  const elapsedTimeElement = document.querySelector(
+    '[data-testid="currentUTCTime"]'
+  );
 
   const currentTime = new Date().getTime();
 

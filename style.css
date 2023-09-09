@@ -23,9 +23,6 @@ img[data-testid='slackDisplayImage'] {
   margin-bottom: 20px;
   border-radius: 6px;
 }
-h1[data-testid='page-title'] {
-  font-size: 16px;
-}
 
 a[data-testid='githubURL'] {
   color: #000;
@@ -64,9 +61,4 @@ main {
   align-items: center;
   gap: 10px;
   margin-top: 8px;
-}
-
-.github {
-  width: 15px;
-  height: 15px;
 }
