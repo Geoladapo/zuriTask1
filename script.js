@@ -1,4 +1,4 @@
-const days = [
+const daysOfWeek = [
   'Sunday',
   'Monday',
   'Tuesday',
@@ -7,26 +7,19 @@ const days = [
   'Friday',
   'Saturday',
 ];
+const today = new Date();
+const currentDay = daysOfWeek[today.getDay()];
 
-const today = document.querySelector('.day');
-const timeh = document.querySelector('.hour');
+document.getElementById('dayOfWeek').textContent = currentDay;
 
-const update = () => {
-  const date = new Date();
-  const options = {
-    year: 'numeric',
-    month: 'numeric',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    timeZoneName: 'short',
-    fractionalSecondDigits: 3,
-  };
-  today.textContent = days[date.getDay()];
-  timeh.textContent = date.toLocaleString('en-US', options);
-};
+function updateElapsedTime() {
+  const elapsedTimeElement = document.getElementById('utcTime');
 
-update();
+  const currentTime = new Date().getTime();
 
-setInterval(update, 100);
+  const jsCreationTime = new Date('1995-05-23T00:00:00.000Z').getTime();
+
+  const elapsedMilliseconds = currentTime - jsCreationTime;
+
+  elapsedTimeElement.textContent = elapsedMilliseconds.toString();
+}
