@@ -23,3 +23,5 @@ function updateElapsedTime() {
 
   elapsedTimeElement.textContent = elapsedMilliseconds.toString();
 }
+updateElapsedTime();
+setInterval(updateElapsedTime, 1000);
