@@ -50,9 +50,7 @@
           '[data-testid="currentUTCTime"]'
         );
         const currentTime = new Date().getTime();
-        const jsCreationTime = new Date('1995-05-23T00:00:00.000Z').getTime();
-        const elapsedMilliseconds = currentTime - jsCreationTime;
-        elapsedTimeElement.textContent = elapsedMilliseconds.toString();
+        elapsedTimeElement.textContent = currentTime.toString();
       }
       updateElapsedTime();
       setInterval(updateElapsedTime, 1000);
