@@ -50,7 +50,7 @@
           '[data-testid="currentUTCTime"]'
         );
         const currentTime = new Date().getTime();
-        elapsedTimeElement.textContent = currentTime.toString();
+        elapsedTimeElement.textContent = currentTime;
       }
       updateElapsedTime();
       setInterval(updateElapsedTime, 1000);
